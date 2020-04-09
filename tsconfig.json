@@ -8,4 +8,6 @@
     "lib": ["es2017", "dom"],
     "experimentalDecorators": true
   },
+  "include": ["src/**/*.ts", "node_modules/@open-wc/**/*.js"],
+  "exclude": ["node_modules/!(@open-wc)"]
 }
