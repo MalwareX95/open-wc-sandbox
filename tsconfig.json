@@ -6,8 +6,9 @@
     "moduleResolution": "node", 
     "allowJs": true,
     "lib": ["es2017", "dom"],
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*.ts", "node_modules/@open-wc/**/*.js"],
+  "include": ["src/**/*.ts", "node_modules/@open-wc/**/*.js", "src/environment.js"],
   "exclude": ["node_modules/!(@open-wc)"]
 }

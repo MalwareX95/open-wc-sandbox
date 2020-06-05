@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
   <base href="/">
-
+  <script>
+    window.process = { env: { NODE_ENV: 'production' } };
+  </script>
   <style>
     html,
     body {
@@ -18,10 +20,10 @@
   </style>
   <title>app-starter</title>
 </head>
-
 <body>
-  <app-starter></app-starter>
-  <script type="module" src="./src/AppStarter.ts"></script>
+  <!-- <app-starter></app-starter> -->
+  <home-page></home-page>
+  <script type="module" src="./src/home/index.ts"></script>
 </body>
 
 </html>
